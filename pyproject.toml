@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-enabled-portfolio-pmo"
+version = "1.0.0"
+description = "AI-Enabled Enterprise Portfolio PMO Demonstration Repository"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "jinja2>=3.1.2",
+    "openpyxl>=3.1.2",
+    "python-pptx>=0.6.21",
+    "scikit-learn>=1.2.0",
+    "jsonschema>=4.17.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"

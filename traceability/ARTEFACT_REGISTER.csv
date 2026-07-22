@@ -1,0 +1,26 @@
+Artefact ID,Artefact Path,Description,Generating Script / Module,Primary Requirements Evidenced
+ART-001,README.md,Master project documentation,Documentation Agent,REQ-033 REQ-040
+ART-002,LICENSE,MIT Open Source License,Orchestrator,REQ-035
+ART-003,pyproject.toml,Python project packaging metadata,Orchestrator,REQ-035
+ART-004,requirements.txt,Pinned dependency register,Orchestrator,REQ-035
+ART-005,Makefile,Task runner build commands,Orchestrator,REQ-028 REQ-031
+ART-006,config/settings.yaml,Global portfolio configuration,Orchestrator,REQ-041
+ART-007,config/validation_rules.yaml,Validation rules definition,Data Quality Agent,REQ-008 REQ-026
+ART-008,config/rag_thresholds.yaml,RAG status thresholds,Orchestrator,REQ-020
+ART-009,config/ai_config.yaml,AI adapter configuration,AI Reporting Agent,REQ-036 REQ-038
+ART-010,data/synthetic/README.md,Synthetic data disclaimer,Jira/Data Agent,REQ-034
+ART-011,data/synthetic/portfolios.csv,5 synthetic portfolio definitions,Jira/Data Agent,REQ-041
+ART-012,data/synthetic/initiatives.csv,50 synthetic initiatives CSV,scripts/generate_synthetic_data.py,REQ-007 REQ-023 REQ-041
+ART-013,data/synthetic/initiatives.json,50 synthetic initiatives JSON,scripts/generate_synthetic_data.py,REQ-023
+ART-014,data/synthetic/raid_log.csv,RAID log CSV,scripts/generate_synthetic_data.py,REQ-014 REQ-021
+ART-015,data/synthetic/decisions.csv,Decisions log CSV,scripts/generate_synthetic_data.py,REQ-014
+ART-016,data/synthetic/intake_register.csv,Front-door intake register,scripts/generate_synthetic_data.py,REQ-010 REQ-019
+ART-017,data/synthetic/historical_snapshots/,3 monthly snapshots,scripts/generate_synthetic_data.py,REQ-018
+ART-043,outputs/samples/one_page_view.html,One-page executive view,src/outputs/one_page_view.py,REQ-016 REQ-022
+ART-044,outputs/samples/portfolio_workbook.csv,Excel portfolio workbook,src/outputs/excel_workbook.py,REQ-024
+ART-045,outputs/samples/governance_pack.pptx.txt,PowerPoint governance pack,src/outputs/pptx_pack.py,REQ-002 REQ-013 REQ-025
+ART-046,outputs/samples/monthly_update.html,Monthly portfolio update,src/outputs/monthly_update.py,REQ-018
+ART-047,outputs/samples/dashboard/index.html,Local HTML dashboard,src/outputs/dashboard.py,REQ-020
+ART-048,outputs/samples/data_quality_report.html,Data quality report,src/outputs/data_quality_report.py,REQ-008 REQ-021
+ART-049,outputs/samples/demand_pipeline.html,Demand pipeline report,src/outputs/demand_report.py,REQ-019
+ART-050,outputs/samples/risk_dependency_report.html,Risk dependency report,src/outputs/risk_dependency_report.py,REQ-021

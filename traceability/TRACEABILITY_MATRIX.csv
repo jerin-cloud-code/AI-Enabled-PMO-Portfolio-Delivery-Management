@@ -1,0 +1,42 @@
+Requirement ID,Role Capability,Research Source,Design Decision,Source File,Generated Artefact,Test ID,Test Result,Verification Evidence,Status
+REQ-001,Draft portfolio summaries from Jira data,SRC-001 SRC-003,DES-003 DES-004,src/ai/summariser.py,outputs/samples/one_page_view.html,TEST-041..045,PASSED,tests/test_ai_adapter.py,VERIFIED
+REQ-002,Assist with reports and presentation packs,SRC-002 SRC-005,DES-007,src/outputs/pptx_pack.py,outputs/samples/governance_pack.pptx.txt,TEST-061..065,PASSED,tests/test_pptx_output.py,VERIFIED
+REQ-003,Detect duplication and overlap,SRC-001 SRC-004,DES-003,src/analysis/duplicates.py,src/analysis/duplicates.py,TEST-036..040,PASSED,tests/test_duplicates.py,VERIFIED
+REQ-004,Maintain reusable prompt templates,SRC-003,DES-012,templates/prompts/*.txt,templates/prompts/portfolio_summary.txt,TEST-041,PASSED,tests/test_ai_adapter.py,VERIFIED
+REQ-005,Review AI outputs for factual accuracy,SRC-003,DES-010,src/ai/validation.py,src/ai/validation.py,TEST-046..050,PASSED,tests/test_ai_validation.py,VERIFIED
+REQ-006,Keep humans responsible for final decisions,SRC-003,DES-010,src/review/workflow.py,src/review/workflow.py,TEST-046,PASSED,tests/test_ai_validation.py,VERIFIED
+REQ-007,Maintain accurate initiative data,SRC-001,DES-009 DES-015,src/models/initiative.py,data/synthetic/initiatives.csv,TEST-001..005,PASSED,tests/test_importers.py,VERIFIED
+REQ-008,Detect incomplete or stale records,SRC-001,DES-014,src/validation/engine.py,outputs/samples/data_quality_report.html,TEST-010..020,PASSED,tests/test_validation.py,VERIFIED
+REQ-009,Follow up on data-quality exceptions,SRC-001,DES-006,src/validation/exceptions.py,outputs/samples/data_quality_report.html,TEST-071..075,PASSED,tests/test_data_quality.py,VERIFIED
+REQ-010,Support front-door intake process,SRC-001,DES-009,src/intake/pipeline.py,data/synthetic/intake_register.csv,TEST-051,PASSED,tests/test_pipeline.py,VERIFIED
+REQ-011,Track initiatives through shaping,SRC-001,DES-009,src/intake/pipeline.py,outputs/samples/demand_pipeline.html,TEST-051,PASSED,tests/test_pipeline.py,VERIFIED
+REQ-012,Support recurring executive reviews,SRC-002,DES-007,docs/governance/GOVERNANCE_GUIDE.md,outputs/samples/governance_pack.pptx.txt,TEST-061..065,PASSED,tests/test_pptx_output.py,VERIFIED
+REQ-013,Produce standardised governance packs,SRC-002,DES-007,src/outputs/pptx_pack.py,outputs/samples/governance_pack.pptx.txt,TEST-061..065,PASSED,tests/test_pptx_output.py,VERIFIED
+REQ-014,Track decisions actions and outcomes,SRC-001,DES-009,src/raid/tracker.py,data/synthetic/decisions.csv,TEST-031..035,PASSED,tests/test_raid.py,VERIFIED
+REQ-015,Ensure materials are complete,SRC-002,DES-010,src/outputs/one_page_view.py,outputs/samples/one_page_view.html,TEST-051..055,PASSED,tests/test_pipeline.py,VERIFIED
+REQ-016,One-page portfolio view,SRC-002,DES-005,src/outputs/one_page_view.py,outputs/samples/one_page_view.html,TEST-066,PASSED,tests/test_dashboard.py,VERIFIED
+REQ-017,Executive portfolio summary,SRC-002 SRC-003,DES-003 DES-004,src/ai/summariser.py,outputs/samples/monthly_update.html,TEST-041..045,PASSED,tests/test_ai_adapter.py,VERIFIED
+REQ-018,Monthly portfolio update,SRC-002,DES-011,src/outputs/monthly_update.py,outputs/samples/monthly_update.html,TEST-051..055,PASSED,tests/test_pipeline.py,VERIFIED
+REQ-019,Demand pipeline,SRC-002,DES-009,src/outputs/demand_report.py,outputs/samples/demand_pipeline.html,TEST-051,PASSED,tests/test_pipeline.py,VERIFIED
+REQ-020,Portfolio metrics,SRC-002,DES-005,src/metrics/engine.py,outputs/samples/dashboard/index.html,TEST-021..030,PASSED,tests/test_metrics.py,VERIFIED
+REQ-021,Risk dependency reporting,SRC-002,DES-009,src/outputs/risk_dependency_report.py,outputs/samples/risk_dependency_report.html,TEST-031..035,PASSED,tests/test_raid.py,VERIFIED
+REQ-022,Clear executive-ready content,SRC-002,DES-010,src/outputs/one_page_view.py,outputs/samples/one_page_view.html,TEST-051..055,PASSED,tests/test_pipeline.py,VERIFIED
+REQ-023,Jira-style structured data,SRC-001,DES-015,src/importers/csv_importer.py,data/synthetic/initiatives.csv,TEST-001..005,PASSED,tests/test_importers.py,VERIFIED
+REQ-024,Excel-compatible outputs,SRC-005,DES-007,src/outputs/excel_workbook.py,outputs/samples/portfolio_workbook.csv,TEST-056..060,PASSED,tests/test_excel_output.py,VERIFIED
+REQ-025,PowerPoint outputs,SRC-005,DES-007,src/outputs/pptx_pack.py,outputs/samples/governance_pack.pptx.txt,TEST-061..065,PASSED,tests/test_pptx_output.py,VERIFIED
+REQ-026,Data validation and reconciliation,SRC-001,DES-014,src/validation/engine.py,outputs/samples/data_quality_report.html,TEST-010..020,PASSED,tests/test_validation.py,VERIFIED
+REQ-027,SharePoint/Teams guidance,SRC-006,DES-015,docs/SHAREPOINT_GUIDANCE.md,docs/SHAREPOINT_GUIDANCE.md,N/A,PASSED,Doc Review,VERIFIED
+REQ-028,Process streamlining,SRC-001,DES-008,Makefile,Makefile,TEST-051,PASSED,tests/test_pipeline.py,VERIFIED
+REQ-029,Data-quality improvement,SRC-001,DES-014,src/validation/engine.py,outputs/samples/data_quality_report.html,TEST-010..020,PASSED,tests/test_validation.py,VERIFIED
+REQ-030,Reporting standardisation,SRC-002,DES-007 DES-012,templates/,templates/one_page_view.html,TEST-051..055,PASSED,tests/test_pipeline.py,VERIFIED
+REQ-031,Reduction of manual effort,SRC-001,DES-008,scripts/generate_all.py,scripts/generate_all.py,TEST-051,PASSED,tests/test_pipeline.py,VERIFIED
+REQ-032,PMO standards and templates,SRC-001,DES-012,templates/,templates/prompts/portfolio_summary.txt,TEST-041,PASSED,tests/test_ai_adapter.py,VERIFIED
+REQ-033,Company-neutral boundary,SRC-007,N/A,docs/PORTFOLIO_WORDING_GUIDE.md,README.md,TEST-076,PASSED,tests/test_security.py,VERIFIED
+REQ-034,Synthetic data only,SRC-007,N/A,data/synthetic/README.md,data/synthetic/README.md,TEST-076,PASSED,tests/test_security.py,VERIFIED
+REQ-035,No paid services,SRC-007,N/A,pyproject.toml,pyproject.toml,TEST-077,PASSED,tests/test_security.py,VERIFIED
+REQ-036,No credentials required,SRC-007,DES-003 DES-015,src/ai/fallback.py,src/ai/fallback.py,TEST-078,PASSED,tests/test_security.py,VERIFIED
+REQ-037,Deterministic offline fallback,SRC-007,DES-003,src/ai/fallback.py,src/ai/fallback.py,TEST-041..045,PASSED,tests/test_ai_adapter.py,VERIFIED
+REQ-038,Optional AI adapter,SRC-007,DES-004,src/ai/adapter.py,src/ai/adapter.py,TEST-041,PASSED,tests/test_ai_adapter.py,VERIFIED
+REQ-039,No secrets stored,SRC-007,N/A,.gitignore,.gitignore,TEST-079,PASSED,tests/test_security.py,VERIFIED
+REQ-040,Honest positioning,SRC-007,N/A,career/honest-claims-boundary.md,career/honest-claims-boundary.md,N/A,PASSED,Doc Review,VERIFIED
+REQ-041,Support Tech Data AI Cyber Fraud,SRC-001,DES-013,data/synthetic/initiatives.csv,data/synthetic/initiatives.csv,TEST-001,PASSED,tests/test_importers.py,VERIFIED
