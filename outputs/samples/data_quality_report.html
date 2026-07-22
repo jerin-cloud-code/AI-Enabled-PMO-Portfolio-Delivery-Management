@@ -1,0 +1,29 @@
+# Data Quality Exception Report
+
+> **SYNTHETIC DEMONSTRATION DATA — NOT FROM A REAL ORGANISATION**
+
+## Summary Exception Statistics
+- **Total Exceptions Found:** 15
+- **BLOCKER Exceptions:** 1
+- **WARNING Exceptions:** 13
+- **INFO Advisory Items:** 1
+
+## Detailed Exception Log
+
+| Rule ID | Rule Name | Severity | Initiative ID | Field | Error Message | Owner |
+|---|---|---|---|---|---|---|
+| VAL-RULE-011 | Budget Spend Overrun | WARNING | INIT-001 | actual_cost | Actual cost (£1,600,000.00) exceeds budget (£1,250,000.00) by > 15% | Lead Delivery Mgr (Technology) |
+| VAL-RULE-011 | Budget Spend Overrun | WARNING | INIT-003 | actual_cost | Actual cost (£1,306,500.00) exceeds budget (£1,005,000.00) by > 15% | Lead Delivery Mgr (AI) |
+| VAL-RULE-015 | Status / RAG Inconsistency | WARNING | INIT-003 | rag_status | Spend variance is > 25% but RAG status is 'GREEN' (expected RED) | Lead Delivery Mgr (AI) |
+| VAL-RULE-011 | Budget Spend Overrun | WARNING | INIT-006 | actual_cost | Actual cost (£1,920,000.00) exceeds budget (£1,500,000.00) by > 15% | Lead Delivery Mgr (Technology) |
+| VAL-RULE-011 | Budget Spend Overrun | WARNING | INIT-007 | actual_cost | Actual cost (£1,566,000.00) exceeds budget (£1,080,000.00) by > 15% | Lead Delivery Mgr (Data) |
+| VAL-RULE-015 | Status / RAG Inconsistency | WARNING | INIT-007 | rag_status | Spend variance is > 25% but RAG status is 'AMBER' (expected RED) | Lead Delivery Mgr (Data) |
+| VAL-RULE-011 | Budget Spend Overrun | WARNING | INIT-011 | actual_cost | Actual cost (£2,240,000.00) exceeds budget (£1,750,000.00) by > 15% | Lead Delivery Mgr (Technology) |
+| VAL-RULE-007 | Missing Business Owner | WARNING | INIT-012 | business_owner | Business owner is not specified | Unassigned |
+| VAL-RULE-011 | Budget Spend Overrun | WARNING | INIT-016 | actual_cost | Actual cost (£2,560,000.00) exceeds budget (£2,000,000.00) by > 15% | Lead Delivery Mgr (Technology) |
+| VAL-RULE-005 | Start Date After End Date | BLOCKER | INIT-019 | start_date/target_end_date | Start date (2025-12-01) is after target end date (2025-06-30) | Lead Delivery Mgr (Cyber Security) |
+| VAL-RULE-011 | Budget Spend Overrun | WARNING | INIT-021 | actual_cost | Actual cost (£2,880,000.00) exceeds budget (£2,250,000.00) by > 15% | Lead Delivery Mgr (Technology) |
+| VAL-RULE-013 | Orphan Dependency Reference | WARNING | INIT-033 | dependency_ids | Referenced dependency 'INIT-999' does not exist | Lead Delivery Mgr (AI) |
+| VAL-RULE-012 | Missing Benefit Definition | INFO | INIT-042 | expected_benefit | Expected benefits are not defined | Lead Delivery Mgr (Data) |
+| VAL-RULE-010 | Incomplete Closed Initiative | WARNING | INIT-048 | progress_pct | Closed initiative has progress_pct = 75.0% (< 100%) | Lead Delivery Mgr (AI) |
+| VAL-RULE-006 | Stale Record Update | WARNING | INIT-024 | last_update_date | Record not updated for 71 days (threshold: 30 days) | Lead Delivery Mgr (Cyber Security) |

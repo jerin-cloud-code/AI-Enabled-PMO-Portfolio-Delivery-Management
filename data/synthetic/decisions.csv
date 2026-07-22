@@ -1,0 +1,3 @@
+decision_id,initiative_id,ask,options_considered,recommendation,decision_owner,status,decision_date
+DEC-101,INIT-001,Approve additional £250k budget variance for cloud API platform acceleration,Option A: Extend timeline by 3 months; Option B: Inject £250k contractor capacity (Recommended),Option B,Portfolio Investment Committee,PENDING_APPROVAL,2025-03-25
+DEC-102,INIT-011,Formally endorse revised Data Mesh Domain Architecture,Option A: Centralised Data Lake; Option B: Federated Data Mesh (Recommended),Option B,Chief Data Officer,APPROVED,2025-02-14

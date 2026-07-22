@@ -1,0 +1,8 @@
+Claim ID,Claim Statement,Primary Source ID,Corroborating Source ID,Design Decision Supported,Implementation Artefact,Verification Method
+CLM-001,Portfolio management requires distinct intake shaping approval and monitoring lifecycle stages,SRC-001,SRC-002,DEC-006,src/models/lifecycle.py,Automated lifecycle state transition test
+CLM-002,Jira CSV exports map issue key summary and custom fields into tabular columns,SRC-004,SRC-005,DEC-002,src/importers/csv_importer.py,CSV import unit test
+CLM-003,Executive portfolio views must present overall RAG health status and escalations on a single page,SRC-006,SRC-007,DEC-005,src/outputs/one_page_view.py,HTML rendering and print CSS test
+CLM-004,AI-generated content requires factual validation against ground-truth source data prior to executive review,SRC-008,SRC-009,DEC-003,src/ai/validation.py,Factual validation test suite
+CLM-005,TF-IDF cosine similarity enables deterministic detection of potential initiative overlap,SRC-011,SRC-012,DEC-015,src/analysis/duplicates.py,Overlap detection scoring test
+CLM-006,Openpyxl supports professional multi-tab Excel workbook generation with styling and formatting,SRC-013,SINGLE_SOURCE,DEC-007,src/outputs/excel_workbook.py,Excel output structure test
+CLM-007,Python-pptx enables slide template manipulation and automated governance pack generation,SRC-014,SINGLE_SOURCE,DEC-007,src/outputs/pptx_pack.py,PowerPoint slide count and content test

@@ -1,0 +1,4 @@
+Defect ID,Description,Severity,Component,Status,Resolution Evidence
+DEF-001,PowerShell statement separator syntax error in command execution,LOW,Build Scripts,CLOSED,Replaced && with semicolons in PowerShell commands
+DEF-002,Unittest method assertGreaterThan missing in standard lib,LOW,Test Suite,CLOSED,Replaced with assertGreater in tests/test_validation.py
+DEF-003,Jinja2 module missing in environment fallback,MEDIUM,Outputs,CLOSED,Implemented stdlib string replacement fallback in HTML generators

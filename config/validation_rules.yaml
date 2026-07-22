@@ -1,0 +1,68 @@
+# Validation Rules Definition Configuration
+rules:
+  - id: "VAL-RULE-001"
+    name: "Missing Required Fields"
+    severity: "BLOCKER"
+    fields: ["initiative_id", "title", "portfolio_category"]
+  - id: "VAL-RULE-002"
+    name: "Duplicate Initiative ID"
+    severity: "BLOCKER"
+    fields: ["initiative_id"]
+  - id: "VAL-RULE-003"
+    name: "Invalid Lifecycle State"
+    severity: "BLOCKER"
+    fields: ["lifecycle_stage"]
+    allowed_values: ["Intake", "Shaping", "Approved", "Active", "Closed"]
+  - id: "VAL-RULE-004"
+    name: "Invalid RAG Status"
+    severity: "BLOCKER"
+    fields: ["rag_status"]
+    allowed_values: ["RED", "AMBER", "GREEN"]
+  - id: "VAL-RULE-005"
+    name: "Start Date After End Date"
+    severity: "BLOCKER"
+    fields: ["start_date", "target_end_date"]
+  - id: "VAL-RULE-006"
+    name: "Stale Record Update"
+    severity: "WARNING"
+    fields: ["last_update_date"]
+    max_days_old: 30
+  - id: "VAL-RULE-007"
+    name: "Missing Business Owner"
+    severity: "WARNING"
+    fields: ["business_owner"]
+  - id: "VAL-RULE-008"
+    name: "Missing Sponsor"
+    severity: "WARNING"
+    fields: ["sponsor"]
+  - id: "VAL-RULE-009"
+    name: "Progress Percentage Out of Range"
+    severity: "BLOCKER"
+    fields: ["progress_pct"]
+    min: 0.0
+    max: 100.0
+  - id: "VAL-RULE-010"
+    name: "Incomplete Closed Initiative"
+    severity: "WARNING"
+    fields: ["progress_pct", "lifecycle_stage"]
+  - id: "VAL-RULE-011"
+    name: "Budget Spend Overrun"
+    severity: "WARNING"
+    fields: ["actual_cost", "budget"]
+    threshold_multiplier: 1.15
+  - id: "VAL-RULE-012"
+    name: "Missing Benefit Definition"
+    severity: "INFO"
+    fields: ["expected_benefit", "benefits_status"]
+  - id: "VAL-RULE-013"
+    name: "Orphan Dependency Reference"
+    severity: "WARNING"
+    fields: ["dependency_ids"]
+  - id: "VAL-RULE-014"
+    name: "Overdue Target Milestone"
+    severity: "WARNING"
+    fields: ["next_milestone_date", "rag_status"]
+  - id: "VAL-RULE-015"
+    name: "Status / RAG Inconsistency"
+    severity: "WARNING"
+    fields: ["rag_status", "actual_cost", "budget"]

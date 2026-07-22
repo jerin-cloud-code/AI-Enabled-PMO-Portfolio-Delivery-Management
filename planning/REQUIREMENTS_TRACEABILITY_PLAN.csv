@@ -1,0 +1,42 @@
+REQ-ID,Source-ID,Design-ID,Implementation-Path,Artefact-ID,Test-ID,Evidence-Location,Status
+REQ-001,SRC-001 SRC-003,DES-003 DES-004,src/ai/summariser.py,ART-040,TEST-041..045,tests/test_ai_adapter.py,NOT_STARTED
+REQ-002,SRC-002 SRC-005,DES-007,src/outputs/pptx_pack.py,ART-045,TEST-061..065,tests/test_pptx_output.py,NOT_STARTED
+REQ-003,SRC-001 SRC-004,DES-003,src/analysis/duplicates.py,ART-034,TEST-036..040,tests/test_duplicates.py,NOT_STARTED
+REQ-004,SRC-003,DES-012,templates/prompts/*.txt,ART-056..059,TEST-041,tests/test_ai_adapter.py,NOT_STARTED
+REQ-005,SRC-003,DES-010,src/ai/validation.py + src/review/workflow.py,ART-041 ART-042,TEST-046..050,tests/test_ai_validation.py,NOT_STARTED
+REQ-006,SRC-003,DES-010,src/review/workflow.py,ART-042,TEST-046,tests/test_ai_validation.py,NOT_STARTED
+REQ-007,SRC-001,DES-009 DES-015,src/models/ + data/synthetic/,ART-022..025,TEST-001..005,tests/test_importers.py,NOT_STARTED
+REQ-008,SRC-001,DES-014,src/validation/,ART-026..029,TEST-010..020,tests/test_validation.py,NOT_STARTED
+REQ-009,SRC-001,DES-006,outputs/data_quality_report,ART-048,TEST-071..075,tests/test_data_quality.py,NOT_STARTED
+REQ-010,SRC-001,DES-009,src/intake/pipeline.py,ART-036,TEST-051,tests/test_pipeline.py,NOT_STARTED
+REQ-011,SRC-001,DES-009,src/intake/pipeline.py + src/models/lifecycle.py,ART-036 ART-025,TEST-051,tests/test_pipeline.py,NOT_STARTED
+REQ-012,SRC-002,DES-007,outputs/governance_pack.pptx,ART-045,TEST-061..065,tests/test_pptx_output.py,NOT_STARTED
+REQ-013,SRC-002,DES-007,src/outputs/pptx_pack.py + templates/governance_pack.pptx,ART-045 ART-051,TEST-061..065,tests/test_pptx_output.py,NOT_STARTED
+REQ-014,SRC-001,DES-009,src/raid/tracker.py,ART-037,TEST-031..035,tests/test_raid.py,NOT_STARTED
+REQ-015,SRC-002,DES-010,src/outputs/ (completeness checks),ART-043..050,TEST-051..055,tests/test_pipeline.py,NOT_STARTED
+REQ-016,SRC-002,DES-005,src/outputs/one_page_view.py,ART-043,TEST-066,tests/test_dashboard.py,NOT_STARTED
+REQ-017,SRC-002 SRC-003,DES-003 DES-004,AI-generated summary in outputs,ART-040,TEST-041..045,tests/test_ai_adapter.py,NOT_STARTED
+REQ-018,SRC-002,DES-011,src/outputs/monthly_update.py,ART-046,TEST-051..055,tests/test_pipeline.py,NOT_STARTED
+REQ-019,SRC-002,DES-009,src/outputs/demand_report.py,ART-049,TEST-051,tests/test_pipeline.py,NOT_STARTED
+REQ-020,SRC-002,DES-005,src/metrics/,ART-030..033,TEST-021..030,tests/test_metrics.py,NOT_STARTED
+REQ-021,SRC-002,DES-009,src/outputs/risk_dependency_report.py,ART-050,TEST-031..035 TEST-071..075,tests/test_raid.py + tests/test_data_quality.py,NOT_STARTED
+REQ-022,SRC-002,DES-010,All output generators,ART-043..050,TEST-051..055,tests/test_pipeline.py,NOT_STARTED
+REQ-023,SRC-001,DES-015,data/synthetic/,ART-011..017,TEST-001..005,tests/test_importers.py,NOT_STARTED
+REQ-024,SRC-005,DES-007,src/outputs/excel_workbook.py,ART-044,TEST-056..060,tests/test_excel_output.py,NOT_STARTED
+REQ-025,SRC-005,DES-007,src/outputs/pptx_pack.py,ART-045,TEST-061..065,tests/test_pptx_output.py,NOT_STARTED
+REQ-026,SRC-001,DES-014,src/validation/,ART-026..029,TEST-010..020,tests/test_validation.py,NOT_STARTED
+REQ-027,SRC-006,DES-015,docs/SHAREPOINT_GUIDANCE.md,ART-067,N/A,Doc review,NOT_STARTED
+REQ-028,SRC-001,DES-008,Makefile + scripts/generate_all.py,ART-005 ART-072,TEST-051,tests/test_pipeline.py,NOT_STARTED
+REQ-029,SRC-001,DES-014,src/validation/,ART-026..029,TEST-010..020,tests/test_validation.py,NOT_STARTED
+REQ-030,SRC-002,DES-007 DES-012,templates/,ART-051..059,TEST-051..055,tests/test_pipeline.py,NOT_STARTED
+REQ-031,SRC-001,DES-008,scripts/generate_all.py + Makefile,ART-072 ART-005,TEST-051,tests/test_pipeline.py,NOT_STARTED
+REQ-032,SRC-001,DES-012,templates/,ART-051..059,TEST-041,tests/test_ai_adapter.py,NOT_STARTED
+REQ-033,SRC-007,N/A,Adversarial audit,N/A,TEST-076,ADVERSARIAL_AUDIT.md,NOT_STARTED
+REQ-034,SRC-007,N/A,data/synthetic/README.md,ART-010,TEST-076,ADVERSARIAL_AUDIT.md,NOT_STARTED
+REQ-035,SRC-007,N/A,pyproject.toml (no paid deps),ART-003,TEST-077,DEPENDENCY_AUDIT.md,NOT_STARTED
+REQ-036,SRC-007,DES-003 DES-015,AI fallback + file-based data,ART-039,TEST-078,CLEAN_BUILD_LOG.md,NOT_STARTED
+REQ-037,SRC-007,DES-003,src/ai/fallback.py,ART-039,TEST-041..045,tests/test_ai_adapter.py,NOT_STARTED
+REQ-038,SRC-007,DES-004,src/ai/adapter.py,ART-038,TEST-041,tests/test_ai_adapter.py,NOT_STARTED
+REQ-039,SRC-007,N/A,No .env or key files,N/A,TEST-079,SECRET_SCAN.md,NOT_STARTED
+REQ-040,SRC-007,N/A,docs/PORTFOLIO_WORDING_GUIDE.md,ART-069,N/A,Doc review,NOT_STARTED
+REQ-041,SRC-001,DES-013,data/synthetic/ (5 portfolios),ART-011,TEST-001,tests/test_importers.py,NOT_STARTED

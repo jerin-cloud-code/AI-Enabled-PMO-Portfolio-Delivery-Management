@@ -1,0 +1,16 @@
+# Quantitative RAG Status Calculation Thresholds
+rag_thresholds:
+  budget_variance:
+    green_max_pct: 5.0     # Spend variance <= 5% = GREEN
+    amber_max_pct: 15.0    # Spend variance <= 15% = AMBER
+    # > 15% spend variance = RED
+
+  schedule_slippage_days:
+    green_max_days: 7      # Target end date delay <= 7 days = GREEN
+    amber_max_days: 30     # Target end date delay <= 30 days = AMBER
+    # > 30 days delay = RED
+
+  open_critical_risks:
+    green_max_count: 0     # 0 critical risks = GREEN
+    amber_max_count: 2     # 1-2 critical risks = AMBER
+    # >= 3 critical risks = RED

@@ -1,0 +1,51 @@
+Initiative ID,Title,Category,Stage,RAG Status,Budget,Actual Spend
+INIT-001,Technology - API Gateway Modernisation Phase 2,Technology,Active,RED,1250000.0,1600000.0
+INIT-002,Data - Enterprise Metadata Catalog Phase 3,Data,Active,AMBER,880000.0,968000.0
+INIT-003,AI - Automated Document Processing Phase 1,AI,Active,GREEN,1005000.0,1306500.0
+INIT-004,Cyber Security - Vulnerability Management System Phase 2,Cyber Security,Active,GREEN,1040000.0,434720.0
+INIT-005,Fraud Prevention - Card Fraud Scoring Model Phase 3,Fraud Prevention,Active,GREEN,1075000.0,459562.5
+INIT-006,Technology - API Gateway Modernisation Phase 1,Technology,Active,RED,1500000.0,1920000.0
+INIT-007,Data - Enterprise Metadata Catalog Phase 2,Data,Active,AMBER,1080000.0,1566000.0
+INIT-008,AI - Automated Document Processing Phase 3,AI,Active,GREEN,1180000.0,538080.0
+INIT-009,Cyber Security - Vulnerability Management System Phase 1,Cyber Security,Active,GREEN,1215000.0,565582.5
+INIT-010,Fraud Prevention - Card Fraud Scoring Model Phase 2,Fraud Prevention,Active,GREEN,1250000.0,593750.0
+INIT-011,Technology - API Gateway Modernisation Phase 3,Technology,Active,RED,1750000.0,2240000.0
+INIT-012,Data - Enterprise Metadata Catalog Phase 1,Data,Active,AMBER,1280000.0,1408000.0
+INIT-013,AI - Automated Document Processing Phase 2,AI,Active,GREEN,1355000.0,682242.5
+INIT-014,Cyber Security - Vulnerability Management System Phase 3,Cyber Security,Active,GREEN,1390000.0,713070.0
+INIT-015,Fraud Prevention - Card Fraud Scoring Model Phase 1,Fraud Prevention,Active,GREEN,1425000.0,744562.5
+INIT-016,Technology - API Gateway Modernisation Phase 2,Technology,Active,RED,2000000.0,2560000.0
+INIT-017,Data - Enterprise Metadata Catalog Phase 3,Data,Active,AMBER,1480000.0,1628000.0
+INIT-018,AI - Automated Document Processing Phase 1,AI,Active,GREEN,1530000.0,843030.0
+INIT-019,Cyber Security - Vulnerability Management System Phase 2,Cyber Security,Active,GREEN,1565000.0,877182.5
+INIT-020,Fraud Prevention - Card Fraud Scoring Model Phase 3,Fraud Prevention,Active,GREEN,1600000.0,912000.0
+INIT-021,Technology - API Gateway Modernisation Phase 1,Technology,Active,RED,2250000.0,2880000.0
+INIT-022,Data - Enterprise Metadata Catalog Phase 2,Data,Active,AMBER,1680000.0,1848000.0
+INIT-023,AI - Automated Document Processing Phase 3,AI,Active,GREEN,1705000.0,1020442.5
+INIT-024,Cyber Security - Vulnerability Management System Phase 1,Cyber Security,Active,GREEN,1740000.0,1057920.0
+INIT-025,Fraud Prevention - Card Fraud Scoring Model Phase 2,Fraud Prevention,Active,GREEN,1775000.0,1096062.5
+INIT-026,Technology - API Gateway Modernisation Phase 3,Technology,Active,AMBER,1840000.0,2024000.0
+INIT-027,Data - Enterprise Metadata Catalog Phase 1,Data,Active,GREEN,1845000.0,1174342.5
+INIT-028,AI - Automated Document Processing Phase 2,AI,Active,GREEN,1880000.0,1214480.0
+INIT-029,Cyber Security - Vulnerability Management System Phase 3,Cyber Security,Active,GREEN,1915000.0,1255282.5
+INIT-030,Fraud Prevention - Card Fraud Scoring Model Phase 1,Fraud Prevention,Active,GREEN,1950000.0,1296750.0
+INIT-031,Technology - API Gateway Modernisation Phase 2,Technology,Active,AMBER,2040000.0,2244000.0
+INIT-032,Data - Enterprise Metadata Catalog Phase 3,Data,Active,GREEN,2020000.0,1381680.0
+INIT-033,AI - Automated Document Processing Phase 1,AI,Active,GREEN,2055000.0,1425142.5
+INIT-034,Cyber Security - Vulnerability Management System Phase 2,Cyber Security,Active,GREEN,2090000.0,1469270.0
+INIT-035,Fraud Prevention - Card Fraud Scoring Model Phase 3,Fraud Prevention,Active,GREEN,2125000.0,1514062.5
+INIT-036,Technology - API Gateway Modernisation Phase 1,Technology,Active,AMBER,2240000.0,2464000.0
+INIT-037,Data - Enterprise Metadata Catalog Phase 2,Data,Approved,GREEN,1675000.0,15000.0
+INIT-038,AI - Automated Document Processing Phase 3,AI,Approved,GREEN,1700000.0,15000.0
+INIT-039,Cyber Security - Vulnerability Management System Phase 1,Cyber Security,Approved,GREEN,1725000.0,15000.0
+INIT-040,Fraud Prevention - Card Fraud Scoring Model Phase 2,Fraud Prevention,Approved,GREEN,1750000.0,15000.0
+INIT-041,Technology - API Gateway Modernisation Phase 3,Technology,Shaping,GREEN,1830000.0,45000.0
+INIT-042,Data - Enterprise Metadata Catalog Phase 1,Data,Shaping,GREEN,1860000.0,45000.0
+INIT-043,AI - Automated Document Processing Phase 2,AI,Shaping,GREEN,1890000.0,45000.0
+INIT-044,Cyber Security - Vulnerability Management System Phase 3,Cyber Security,Shaping,GREEN,1920000.0,45000.0
+INIT-045,Fraud Prevention - Card Fraud Scoring Model Phase 1,Fraud Prevention,Shaping,GREEN,1950000.0,45000.0
+INIT-046,Technology - API Gateway Modernisation Phase 2,Technology,Closed,GREEN,1420000.0,1391600.0
+INIT-047,Data - Enterprise Metadata Catalog Phase 3,Data,Closed,GREEN,1440000.0,1411200.0
+INIT-048,AI - Automated Document Processing Phase 1,AI,Closed,GREEN,1460000.0,1430800.0
+INIT-049,Cyber Security - Vulnerability Management System Phase 2,Cyber Security,Closed,GREEN,1480000.0,1450400.0
+INIT-050,Fraud Prevention - Card Fraud Scoring Model Phase 3,Fraud Prevention,Closed,GREEN,1500000.0,1470000.0

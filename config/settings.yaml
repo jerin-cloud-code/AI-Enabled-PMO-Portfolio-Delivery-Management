@@ -1,0 +1,28 @@
+# Global Portfolio Settings Configuration
+project_name: "ai-enabled-portfolio-pmo"
+version: "1.0.0"
+environment: "development"
+
+portfolios:
+  - id: "PORT-TECH"
+    name: "Technology Delivery"
+    category: "Technology"
+  - id: "PORT-DATA"
+    name: "Data & Analytics"
+    category: "Data"
+  - id: "PORT-AI"
+    name: "AI & Machine Learning"
+    category: "AI"
+  - id: "PORT-CYBER"
+    name: "Cyber Security"
+    category: "Cyber"
+  - id: "PORT-FRAUD"
+    name: "Fraud Prevention"
+    category: "Fraud"
+
+paths:
+  synthetic_data: "data/synthetic/initiatives.csv"
+  synthetic_data_json: "data/synthetic/initiatives.json"
+  snapshots_dir: "data/synthetic/historical_snapshots"
+  outputs_dir: "outputs"
+  samples_dir: "outputs/samples"

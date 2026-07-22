@@ -1,0 +1,6 @@
+raid_id,initiative_id,item_type,summary,severity_impact,probability,status,owner,target_date
+RISK-001,INIT-001,Risk,Key technical resource contention across Technology and Cyber portfolios,High,High,Open,Delivery Lead Tech,2025-04-15
+RISK-002,INIT-006,Risk,Vendor delivery delays on core cloud microservices components,High,Medium,Open,Vendor Mgr,2025-05-01
+ISSUE-001,INIT-011,Issue,Data governance approval block on customer data mesh schema,Critical,High,Open,Lead Data Architect,2025-04-01
+ACTION-001,INIT-001,Action,Conduct architectural review board session for API gateway design,Medium,Low,In Progress,Solution Architect,2025-03-30
+DEP-001,INIT-016,Dependency,Requires IAM Zero Trust baseline from INIT-005 before SOC deployment,High,High,Open,Cyber PM,2025-05-15

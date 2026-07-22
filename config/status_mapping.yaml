@@ -1,0 +1,14 @@
+# Jira Status -> PMO Portfolio Lifecycle Stage Mapping Configuration
+status_mappings:
+  "Backlog": "Intake"
+  "Submitted": "Intake"
+  "Under Triage": "Shaping"
+  "Business Case Elaborating": "Shaping"
+  "Governance Review": "Shaping"
+  "Approved": "Approved"
+  "In Progress": "Active"
+  "In Delivery": "Active"
+  "Testing": "Active"
+  "Done": "Closed"
+  "Completed": "Closed"
+  "Cancelled": "Closed"

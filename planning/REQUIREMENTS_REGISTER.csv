@@ -1,0 +1,42 @@
+REQ-ID,Category,Requirement,Source,Priority,Planned Evidence,Design Decision,Test ID,Status
+REQ-001,AI PMO,Draft portfolio summaries from Jira-style data,Role spec,MUST,src/ai/summariser.py + outputs/samples/,DES-003 DES-004,TEST-041..045,NOT_STARTED
+REQ-002,AI PMO,Assist with reports and presentation packs,Role spec,MUST,src/outputs/pptx_pack.py + outputs/samples/governance_pack.pptx,DES-007,TEST-061..065,NOT_STARTED
+REQ-003,AI PMO,Detect duplication and overlap,Role spec,MUST,src/analysis/duplicates.py + tests/test_duplicates.py,DES-003,TEST-036..040,NOT_STARTED
+REQ-004,AI PMO,Maintain reusable prompt templates,Role spec,MUST,templates/prompts/*.txt,DES-012,TEST-041,NOT_STARTED
+REQ-005,AI PMO,Review AI outputs for factual accuracy tone and completeness,Role spec,MUST,src/ai/validation.py + src/review/workflow.py,DES-010,TEST-046..050,NOT_STARTED
+REQ-006,AI PMO,Keep humans responsible for final decisions,Role spec,MUST,src/review/workflow.py (Draft→Review→Approve),DES-010,TEST-046,NOT_STARTED
+REQ-007,Portfolio Data,Maintain accurate initiative data,Role spec,MUST,src/models/ + data/synthetic/,DES-009 DES-015,TEST-001..005,NOT_STARTED
+REQ-008,Portfolio Data,Detect incomplete inconsistent or stale records,Role spec,MUST,src/validation/ + outputs/data_quality_report,DES-014,TEST-010..020,NOT_STARTED
+REQ-009,Portfolio Data,Follow up on data-quality exceptions,Role spec,SHOULD,outputs/data_quality_report (owner + age fields),DES-006,TEST-071..075,NOT_STARTED
+REQ-010,Portfolio Data,Support front-door intake process,Role spec,MUST,src/intake/pipeline.py + data/synthetic/intake_register.csv,DES-009,TEST-051,NOT_STARTED
+REQ-011,Portfolio Data,Track initiatives through shaping and approval,Role spec,MUST,src/intake/pipeline.py + src/models/lifecycle.py,DES-009,TEST-051,NOT_STARTED
+REQ-012,Governance,Support recurring executive portfolio reviews,Role spec,MUST,outputs/governance_pack.pptx + docs/GOVERNANCE_GUIDE.md,DES-007,TEST-061..065,NOT_STARTED
+REQ-013,Governance,Produce standardised governance packs,Role spec,MUST,src/outputs/pptx_pack.py + templates/governance_pack.pptx,DES-007,TEST-061..065,NOT_STARTED
+REQ-014,Governance,Track decisions actions and outcomes,Role spec,MUST,src/raid/tracker.py + data/synthetic/decisions.csv,DES-009,TEST-031..035,NOT_STARTED
+REQ-015,Governance,Ensure materials are complete and decision-ready,Role spec,MUST,src/outputs/ (all generators validate completeness),DES-010,TEST-051..055,NOT_STARTED
+REQ-016,Reporting,One-page portfolio view,Role spec,MUST,src/outputs/one_page_view.py + outputs/samples/one_page_view.html,DES-005,TEST-066,NOT_STARTED
+REQ-017,Reporting,Executive portfolio summary,Role spec,MUST,AI-generated summary in governance pack and one-page view,DES-003 DES-004,TEST-041..045,NOT_STARTED
+REQ-018,Reporting,Monthly portfolio update,Role spec,MUST,src/outputs/monthly_update.py + outputs/samples/monthly_update.html,DES-011,TEST-051..055,NOT_STARTED
+REQ-019,Reporting,Demand pipeline,Role spec,MUST,src/outputs/demand_report.py + intake data,DES-009,TEST-051,NOT_STARTED
+REQ-020,Reporting,Portfolio metrics,Role spec,MUST,src/metrics/ + dashboard metrics panel,DES-005,TEST-021..030,NOT_STARTED
+REQ-021,Reporting,Risk dependency and data-quality reporting,Role spec,MUST,src/outputs/risk_dependency_report.py + data_quality_report.py,DES-009,TEST-031..035 TEST-071..075,NOT_STARTED
+REQ-022,Reporting,Clear executive-ready content,Role spec,MUST,All outputs reviewed for tone and clarity,DES-010,TEST-051..055,NOT_STARTED
+REQ-023,Tools,Jira-style structured data,Role spec,MUST,data/synthetic/ (CSV + JSON),DES-015,TEST-001..005,NOT_STARTED
+REQ-024,Tools,Excel-compatible outputs,Role spec,MUST,src/outputs/excel_workbook.py + .xlsx output,DES-007,TEST-056..060,NOT_STARTED
+REQ-025,Tools,PowerPoint outputs,Role spec,MUST,src/outputs/pptx_pack.py + .pptx output,DES-007,TEST-061..065,NOT_STARTED
+REQ-026,Tools,Data validation and reconciliation,Role spec,MUST,src/validation/ + tests/,DES-014,TEST-010..020,NOT_STARTED
+REQ-027,Tools,SharePoint/Teams guidance without live tenant,Role spec,SHOULD,docs/SHAREPOINT_GUIDANCE.md,DES-015,N/A (doc review),NOT_STARTED
+REQ-028,Improvement,Process streamlining,Role spec,SHOULD,Makefile automation + generate_all.py,DES-008,TEST-051,NOT_STARTED
+REQ-029,Improvement,Data-quality improvement,Role spec,SHOULD,Validation engine + exception reporting + staleness,DES-014,TEST-010..020,NOT_STARTED
+REQ-030,Improvement,Reporting standardisation,Role spec,SHOULD,Templates + consistent output formats,DES-007 DES-012,TEST-051..055,NOT_STARTED
+REQ-031,Improvement,Reduction of manual effort,Role spec,SHOULD,Automated generation pipeline,DES-008,TEST-051,NOT_STARTED
+REQ-032,Improvement,PMO standards and reusable templates,Role spec,SHOULD,templates/ directory,DES-012,TEST-041,NOT_STARTED
+REQ-033,Boundary,Company-neutral,Constraint,MUST,Adversarial audit,N/A,TEST-076,NOT_STARTED
+REQ-034,Boundary,Synthetic data only,Constraint,MUST,Data labelled synthetic; no real data,N/A,TEST-076,NOT_STARTED
+REQ-035,Boundary,No paid services,Constraint,MUST,Dependency audit,N/A,TEST-077,NOT_STARTED
+REQ-036,Boundary,No credentials required,Constraint,MUST,Runs without Jira/M365/LLM keys,DES-003 DES-015,TEST-078,NOT_STARTED
+REQ-037,Boundary,Deterministic offline fallback,Constraint,MUST,src/ai/fallback.py produces output without LLM,DES-003,TEST-041..045,NOT_STARTED
+REQ-038,Boundary,Optional AI adapter,Constraint,SHOULD,src/ai/adapter.py interface,DES-004,TEST-041,NOT_STARTED
+REQ-039,Boundary,No secrets stored,Constraint,MUST,Secret scan passes,N/A,TEST-079,NOT_STARTED
+REQ-040,Boundary,Honest positioning,Constraint,MUST,docs/PORTFOLIO_WORDING_GUIDE.md,N/A,N/A (doc review),NOT_STARTED
+REQ-041,Portfolio Types,Support technology data AI cyber fraud portfolios,Role spec,MUST,5 synthetic portfolios covering these domains,DES-013,TEST-001,NOT_STARTED
