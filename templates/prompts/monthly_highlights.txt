@@ -1,8 +1,0 @@
-# Prompt Template: Monthly Portfolio Highlights
-# Version: 1.0.0
-
-Month: {{ month_name }}
-Active Initiatives: {{ active_count }}
-Completed Milestone Count: {{ completed_milestones }}
-
-Draft 3-5 high-impact executive bullet points summarising key accomplishments and escalations for {{ month_name }}.
