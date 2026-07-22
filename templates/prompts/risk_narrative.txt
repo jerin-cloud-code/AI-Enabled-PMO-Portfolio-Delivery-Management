@@ -1,0 +1,8 @@
+# Prompt Template: Risk & RAID Narrative Draft
+# Version: 1.0.0
+
+Open Risks Count: {{ open_risks_count }}
+Open Issues Count: {{ open_issues_count }}
+Pending Decisions Count: {{ pending_decisions_count }}
+
+Draft an executive risk assessment narrative highlighting top cross-portfolio dependencies and mitigation actions required.

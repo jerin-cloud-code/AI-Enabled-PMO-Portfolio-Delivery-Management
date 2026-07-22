@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI-Enabled Portfolio PMO Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="header">
+  <div>
+    <h1 class="title">Enterprise Portfolio PMO Dashboard</h1>
+    <small style="color: #94a3b8;">Local Static Dashboard | Reporting Period: March 2025</small>
+  </div>
+  <div class="watermark">SYNTHETIC DEMONSTRATION DATA — NOT REAL</div>
+</div>
+
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-title">Total Initiatives</div>
+    <div class="kpi-value">{{ total_initiatives }}</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-title">Overall RAG Health</div>
+    <div class="kpi-value"><span class="badge-{{ overall_rag }}">{{ overall_rag }}</span></div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-title">Total Budget</div>
+    <div class="kpi-value">£{{ "%.2f"|format(total_budget / 1000000.0) }}M</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-title">Portfolio Health Score</div>
+    <div class="kpi-value">{{ health_score }}/100</div>
+  </div>
+</div>
+
+<div class="table-card">
+  <h2>Portfolio Domain Overview</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Domain Category</th>
+        <th>Initiative Count</th>
+        <th>Budget (£M)</th>
+        <th>Actual Spend (£M)</th>
+        <th>RED</th>
+        <th>AMBER</th>
+        <th>GREEN</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for cat, d in by_category.items() %}
+      <tr>
+        <td><strong>{{ cat }}</strong></td>
+        <td>{{ d.count }}</td>
+        <td>£{{ "%.2f"|format(d.budget / 1000000.0) }}M</td>
+        <td>£{{ "%.2f"|format(d.actual_cost / 1000000.0) }}M</td>
+        <td><span class="badge-RED">{{ d.red_count }}</span></td>
+        <td><span class="badge-AMBER">{{ d.amber_count }}</span></td>
+        <td><span class="badge-GREEN">{{ d.green_count }}</span></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
